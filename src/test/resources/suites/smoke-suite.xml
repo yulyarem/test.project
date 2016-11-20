@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="smoke-suite" parallel="classes" thread-count="3">
+
+    <test name="Smoke test suite">
+        <groups>
+            <run>
+                <include name="one of groups"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.components.registered_page.RegisteredPageTest"/>
+            <class name="tests.components.login_page.LoginPageTest"/>
+        </classes>
+    </test>
+
+</suite>
